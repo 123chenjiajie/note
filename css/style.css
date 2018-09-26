@@ -1,0 +1,10 @@
+.btn-primary{
+    margin-bottom: 30px;
+}
+.card{
+    margin-bottom: 30px;
+}
+.fa-trash{
+    float: right;
+    cursor: pointer;
+}

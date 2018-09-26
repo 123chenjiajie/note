@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="https://cdn.bootcss.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+       <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="app">
+
+  <div class="jumbotron">
+        <div class="container">
+            <h1 class="display-4 text-center">Notes App_Vue.js</h1>
+        </div>
+    </div>
+  
+  
+   <div class="container">
+        <button type="button" class="btn btn-primary" @click="add">添加笔记</button>
+    </div>
+  
+
+   <div class="container">
+       <note v-for="(note,index) in notes" :todo="note" :key="index"></note>
+    </div>
+    
+    
+    
+  </div>  
+   
+<!--   vue-->
+    <script src="https://cdn.bootcss.com/vue/2.5.16/vue.js"></script>
+<!--  lodash 用于标题长度  -->
+    <script src="https://cdn.bootcss.com/lodash.js/4.17.4/lodash.min.js"></script>
+<!-- moment 用于时间处理   -->
+    <script src="https://cdn.bootcss.com/moment.js/2.22.1/moment.min.js"></script>
+    <!-- moment 多语言 中文-->
+<script src="https://cdn.bootcss.com/moment.js/2.22.1/locale/zh-cn.js"></script>
+<!--  多行文本自动扩大高度-->
+   <script src="https://cdn.bootcss.com/autosize.js/4.0.2/autosize.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
